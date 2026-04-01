@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Student Feedback Form</legend>
+<div>
+    
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter your full name"
+          required
+          autofocus
+          autocomplete="on"
+      
+        />
+</div>
+
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+      
+       <div>
+         <label for="age">Age: </label>
+        <input type="number" name="age" id="age" />
+       </div>
+     
+       <div>
+         <p>Gender:</p>
+        <input type="radio" name="gender" id="female" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Other">
+        <label for="other">other</label>
+       </div> 
+      <div>
+          <label for="semester">Current Semester :</label>
+        <select name="semester" id="semester">
+              <option value="">-- Select Semester --</option>
+          <option value="1">1st Semester</option>
+          <option value="2">2nd Semester</option>
+          <option value="3">3rd Semester</option>
+          <option value="4">4th Semester</option>
+          <option value="5">5th Semester</option>
+          <option value="6">6th Semester</option>
+          <option value="7">7th semester</option>
+          <option value="8">8th Semester</option>
+        </select>
+      </div>
+       
+       <div>
+        Choose Subjects:</p>
+        <input type="checkbox" name="subjects" id="physics" />
+        <label for="physics">Physics</label>
+        <input type="checkbox" name="subjects" id="Automata" />
+        <label for="Automata">Automata</label>
+        <input type="checkbox" name="subjects" id="MachineLearning" />
+        <label for="MachineLearning">Machine Learning</label>
+       </div>
+
+        <div>
+            <label for="message">Suggestions or comments: </label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter Your Feedback here"
+          rows="5"
+          cols="40"
+          maxlength="200"
+        ></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
